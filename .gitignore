@@ -1,0 +1,19 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+publish/
+
+## Visual Studio / VS Code
+.vscode/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## OS Files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
