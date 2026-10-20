@@ -1,16 +1,16 @@
 using System;
 using System.IO;
 using System.Text.Json;
-using FilePilot.Models;
+using FileWin.Models;
 
-namespace FilePilot.Services;
+namespace FileWin.Services;
 
 public class SessionManager
 {
     private static readonly string VoidstarDir = Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
         "Voidstar",
-        "FilePilot");
+        "FileWin");
 
     private static readonly string SessionFilePath = Path.Combine(VoidstarDir, "FPilot-Session.json");
 

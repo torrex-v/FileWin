@@ -3,9 +3,9 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
-using FilePilot.Services;
+using FileWin.Services;
 
-namespace FilePilot.Models;
+namespace FileWin.Models;
 
 public class FileItem : INotifyPropertyChanged
 {

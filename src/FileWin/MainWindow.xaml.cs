@@ -4,11 +4,11 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using FilePilot.Models;
-using FilePilot.Services;
-using FilePilot.ViewModels;
+using FileWin.Models;
+using FileWin.Services;
+using FileWin.ViewModels;
 
-namespace FilePilot;
+namespace FileWin;
 
 public partial class MainWindow : Window
 {

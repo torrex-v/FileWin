@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Threading;
 
-namespace FilePilot.Services;
+namespace FileWin.Services;
 
 public class DirectoryWatcherService : IDisposable
 {

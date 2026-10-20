@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
-using FilePilot.Models;
+using FileWin.Models;
 
-namespace FilePilot.Services;
+namespace FileWin.Services;
 
 public class FileSystemService
 {

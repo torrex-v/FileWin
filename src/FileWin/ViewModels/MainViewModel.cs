@@ -9,10 +9,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
-using FilePilot.Models;
-using FilePilot.Services;
+using FileWin.Models;
+using FileWin.Services;
 
-namespace FilePilot.ViewModels;
+namespace FileWin.ViewModels;
 
 public class MainViewModel : INotifyPropertyChanged
 {

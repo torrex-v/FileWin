@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace FilePilot;
+namespace FileWin;
 
 /// <summary>
 /// Interaction logic for App.xaml

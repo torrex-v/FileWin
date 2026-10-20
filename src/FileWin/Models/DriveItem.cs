@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace FilePilot.Models;
+namespace FileWin.Models;
 
 public class DriveItem
 {

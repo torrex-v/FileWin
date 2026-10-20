@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
 
-namespace FilePilot.Models;
+namespace FileWin.Models;
 
 public class PanelTab : INotifyPropertyChanged
 {

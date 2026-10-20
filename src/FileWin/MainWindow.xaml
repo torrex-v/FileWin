@@ -1,11 +1,11 @@
-<Window x:Class="FilePilot.MainWindow"
+<Window x:Class="FileWin.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework"
         mc:Ignorable="d"
-        Title="FilePilot" Height="820" Width="1300"
+        Title="FileWin" Height="820" Width="1300"
         MinHeight="600" MinWidth="900"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -120,9 +120,9 @@
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="12,0,0,0">
                 <TextBlock Text="🚀" FontSize="16" VerticalAlignment="Center" Margin="0,0,8,0"/>
-                <TextBlock Text="FilePilot" FontWeight="Bold" FontSize="13" Foreground="#f8fafc" VerticalAlignment="Center"/>
+                <TextBlock Text="FileWin" FontWeight="Bold" FontSize="13" Foreground="#f8fafc" VerticalAlignment="Center"/>
                 <Border Background="#1e3a5f" CornerRadius="3" Margin="8,0,0,0" Padding="5,1">
-                    <TextBlock Text="v6.5" FontSize="10" Foreground="#60a5fa" FontWeight="SemiBold"/>
+                    <TextBlock Text="v1.0.0" FontSize="10" Foreground="#60a5fa" FontWeight="SemiBold"/>
                 </Border>
             </StackPanel>
 
@@ -679,7 +679,7 @@
 
             <TextBlock Text="{Binding StatusText}" Foreground="#94a3b8" FontSize="11" VerticalAlignment="Center" Margin="12,0"/>
             <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0,0,12,0">
-                <TextBlock Text="FilePilot 6.5" Foreground="#475569" FontSize="11" VerticalAlignment="Center"/>
+                <TextBlock Text="FileWin 1.0.0" Foreground="#475569" FontSize="11" VerticalAlignment="Center"/>
             </StackPanel>
         </Grid>
 

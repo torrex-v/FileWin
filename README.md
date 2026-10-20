@@ -1,17 +1,18 @@
 <div align="center">
 
-# 🚀 FilePilot (Unicode & UTF-8 Edition)
+# 🚀 FileWin (Unicode & UTF-8 Edition)
 
-**A high-performance, modern dual-pane file manager for Windows rebuilt with full UTF-8 & Persian (Farsi) character recognition, in-line tree expansion, live file watching, and a sleek dark UI.**
+**A high-performance, modern dual-pane file manager for Windows built with full UTF-8 & Persian (Farsi) character recognition, in-line tree expansion, live file watching, and a sleek dark UI.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![.NET 9](https://img.shields.io/badge/.NET-9.0--windows-512BD4.svg)](https://dotnet.microsoft.com/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20x64-0078D6.svg)](https://microsoft.com)
+[![Version](https://img.shields.io/badge/Version-v1.0.0-3b82f6.svg)](https://github.com/torrex-v/FileWin/releases/tag/v1.0.0)
 [![Unicode](https://img.shields.io/badge/Unicode-UTF--8%20%2F%20BiDi%20RTL-10b981.svg)](#-full-utf-8--unicode-recognition)
 
 <br/>
 
-![FilePilot Preview](assets/preview.png)
+![FileWin Preview](assets/preview.png)
 
 </div>
 
@@ -20,8 +21,8 @@
 ## 🌟 Highlights & Key Capabilities
 
 ### 🌐 Full UTF-8 & Unicode Recognition
-Unlike earlier implementations that strictly rasterized a limited 256-glyph Latin-1 character set, **FilePilot** natively handles full Unicode and UTF-8 filenames, paths, and document contents across all components:
-* **Persian (Farsi) & Arabic Script Support**: Native support for all Persian-specific characters (**گ**, **چ**, **پ**, **ژ**, **ک**, **ی**, **ۀ**, **ھ**) alongside the full Arabic Unicode block.
+Unlike traditional Windows file managers that choke or display missing glyph boxes on non-Latin filenames, **FileWin** is engineered from the ground up for seamless, first-class UTF-8 and Unicode character recognition across all files, paths, and document contents:
+* **Persian (Farsi) & Arabic Script Support**: Native support for all Persian-specific letters (**گ**, **چ**, **پ**, **ژ**, **ک**, **ی**, **ۀ**, **ھ**) alongside the full Arabic Unicode block.
 * **Bidirectional (BiDi) & Contextual Shaping**: Seamless right-to-left (RTL) text rendering with correct cursive letter shaping (initial, medial, final, isolated forms).
 * **Persian Alphabetical Collation**: Custom natural sorter adhering strictly to the Persian alphabetical order:
   $$\text{آ} \rightarrow \text{ا} \rightarrow \text{ب} \rightarrow \text{پ} \rightarrow \text{ت} \rightarrow \dots \rightarrow \text{ک} \rightarrow \text{گ} \rightarrow \dots \rightarrow \text{ی}$$
@@ -31,7 +32,7 @@ Unlike earlier implementations that strictly rasterized a limited 256-glyph Lati
 
 ### ⚡ Feature Set
 
-* **Dual-Pane & Multi-Tabbed Navigation**: Open multiple tabs, split views horizontally or vertically, and navigate with seamless session persistence compatible with `FPilot-Session.json`.
+* **Dual-Pane & Multi-Tabbed Navigation**: Open multiple tabs, split views horizontally or vertically, and navigate with seamless session persistence.
 * **Quick Access Sidebar**:
   * **Storage**: Live drive cards showing capacity, free space, and animated disk usage meters.
   * **Places**: Instant access to Desktop, Downloads, Documents, Pictures, Videos, and User Profile.
@@ -79,11 +80,11 @@ Unlike earlier implementations that strictly rasterized a limited 256-glyph Lati
 
 ## 📦 Installation & Download
 
-Pre-built standalone 64-bit Windows executables are available in the [Releases](https://github.com/torrex-v/FilePilot/releases) section:
+Pre-built standalone 64-bit Windows executables are available in the [Releases](https://github.com/torrex-v/FileWin/releases) section:
 
-1. Download **`FilePilot-v6.5.0-win-x64.zip`**.
+1. Download **`FileWin-v1.0.0-win-x64.zip`**.
 2. Extract the archive to any folder.
-3. Run **`FPilot.exe`** (no installer required).
+3. Run **`FileWin.exe`** (no installer required).
 
 ---
 
@@ -97,17 +98,17 @@ Pre-built standalone 64-bit Windows executables are available in the [Releases](
 
 ```bash
 # Clone the repository
-git clone https://github.com/torrex-v/FilePilot.git
-cd FilePilot
+git clone https://github.com/torrex-v/FileWin.git
+cd FileWin
 
 # Restore and build the solution
-dotnet build FilePilot.sln
+dotnet build FileWin.sln
 
 # Run all unit tests
-dotnet test tests/FilePilot.Tests/FilePilot.Tests.csproj
+dotnet test tests/FileWin.Tests/FileWin.Tests.csproj
 
 # Publish standalone release binary
-dotnet publish src/FilePilot/FilePilot.csproj -c Release -r win-x64 --self-contained false -o publish
+dotnet publish src/FileWin/FileWin.csproj -c Release -r win-x64 --self-contained false -o publish
 ```
 
 ---

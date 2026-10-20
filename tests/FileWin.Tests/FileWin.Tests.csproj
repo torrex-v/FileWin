@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\FilePilot\FilePilot.csproj" />
+    <ProjectReference Include="..\..\src\FileWin\FileWin.csproj" />
   </ItemGroup>
 
 </Project>

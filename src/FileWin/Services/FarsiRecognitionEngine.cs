@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace FilePilot.Services;
+namespace FileWin.Services;
 
 public class FarsiCharacterStats
 {

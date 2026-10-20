@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace FilePilot.Models;
+namespace FileWin.Models;
 
 public class SessionFileModel
 {

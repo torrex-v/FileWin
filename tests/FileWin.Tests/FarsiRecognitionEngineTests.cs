@@ -1,10 +1,10 @@
 using System;
 using System.Linq;
-using FilePilot.Models;
-using FilePilot.Services;
+using FileWin.Models;
+using FileWin.Services;
 using Xunit;
 
-namespace FilePilot.Tests;
+namespace FileWin.Tests;
 
 public class FarsiRecognitionEngineTests
 {
