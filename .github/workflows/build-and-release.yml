@@ -1,0 +1,63 @@
+name: CI & Release Build
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build, Test & Package
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore FileWin.sln
+
+    - name: Build solution (Release)
+      run: dotnet build FileWin.sln -c Release --no-restore
+
+    - name: Run unit tests
+      run: dotnet test tests/FileWin.Tests/FileWin.Tests.csproj -c Release --no-build --verbosity normal
+
+    - name: Publish Framework-Dependent (Lightweight)
+      shell: pwsh
+      run: |
+        dotnet publish src/FileWin/FileWin.csproj -c Release -r win-x64 --self-contained false -o dist/framework-dependent
+        Compress-Archive -Path dist/framework-dependent/* -DestinationPath dist/FileWin-win-x64-framework-dependent.zip
+
+    - name: Publish Standalone (Self-Contained Single-File, Zero Runtime Required)
+      shell: pwsh
+      run: |
+        dotnet publish src/FileWin/FileWin.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -o dist/standalone
+        Compress-Archive -Path dist/standalone/* -DestinationPath dist/FileWin-win-x64-standalone.zip
+
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: FileWin-win-x64-builds
+        path: dist/*.zip
+        if-no-files-found: error
+
+    - name: Publish GitHub Release
+      if: startsWith(github.ref, 'refs/tags/v')
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          dist/FileWin-win-x64-standalone.zip
+          dist/FileWin-win-x64-framework-dependent.zip
+        generate_release_notes: true
