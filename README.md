@@ -7,7 +7,8 @@
 **A high-performance, modern dual-pane file manager for Windows built with full UTF-8 & Persian (Farsi) character recognition, in-line tree expansion, live file watching, and a sleek dark UI.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![.NET 9](https://img.shields.io/badge/.NET-9.0--windows-512BD4.svg)](https://dotnet.microsoft.com/)
+[![CI & Release Build](https://github.com/torrex-v/FileWin/actions/workflows/build-and-release.yml/badge.svg)](https://github.com/torrex-v/FileWin/actions/workflows/build-and-release.yml)
+[![.NET 10](https://img.shields.io/badge/.NET-10.0--windows-512BD4.svg)](https://dotnet.microsoft.com/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20x64-0078D6.svg)](https://microsoft.com)
 [![Version](https://img.shields.io/badge/Version-v1.0.0-3b82f6.svg)](https://github.com/torrex-v/FileWin/releases/tag/v1.0.0)
 [![Unicode](https://img.shields.io/badge/Unicode-UTF--8%20%2F%20BiDi%20RTL-10b981.svg)](#-full-utf-8--unicode-recognition)
@@ -82,11 +83,14 @@ Unlike traditional Windows file managers that choke or display missing glyph box
 
 ## 📦 Installation & Download
 
-Pre-built standalone 64-bit Windows executables are available in the [Releases](https://github.com/torrex-v/FileWin/releases) section:
+Pre-built 64-bit Windows executables are available in the [Releases](https://github.com/torrex-v/FileWin/releases) section or GitHub Actions artifacts:
 
-1. Download **`FileWin-v1.0.0-win-x64.zip`**.
-2. Extract the archive to any folder.
-3. Run **`FileWin.exe`** (no installer required).
+* **Portable Standalone (`FileWin-win-x64-standalone.zip`)** *(Recommended)*:
+  * Completely self-contained single-file executable.
+  * **Zero prerequisites**: runs out-of-the-box on any 64-bit Windows 10/11 system without installing any runtime.
+* **Lightweight Framework-Dependent (`FileWin-win-x64-framework-dependent.zip`)**:
+  * Ultra-compact package (~150 KB).
+  * Requires the [.NET 10.0 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/10.0) installed on the machine.
 
 ---
 
@@ -94,7 +98,7 @@ Pre-built standalone 64-bit Windows executables are available in the [Releases](
 
 ### Prerequisites
 * Windows 10 or 11 (x64)
-* [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) or later
+* [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later
 
 ### Build Instructions
 
