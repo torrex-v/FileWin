@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/app.png" width="96" height="96" alt="FilePilot Logo" />
+
 # 🚀 FileWin (Unicode & UTF-8 Edition)
 
 **A high-performance, modern dual-pane file manager for Windows built with full UTF-8 & Persian (Farsi) character recognition, in-line tree expansion, live file watching, and a sleek dark UI.**

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework"
         mc:Ignorable="d"
-        Title="FileWin" Height="820" Width="1300"
+        Title="FileWin" Height="820" Width="1300" Icon="Assets/app.ico"
         MinHeight="600" MinWidth="900"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -119,7 +119,7 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="12,0,0,0">
-                <TextBlock Text="🚀" FontSize="16" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                <Image Source="/Assets/app.png" Width="20" Height="20" Margin="0,0,8,0" VerticalAlignment="Center" RenderOptions.BitmapScalingMode="HighQuality"/>
                 <TextBlock Text="FileWin" FontWeight="Bold" FontSize="13" Foreground="#f8fafc" VerticalAlignment="Center"/>
                 <Border Background="#1e3a5f" CornerRadius="3" Margin="8,0,0,0" Padding="5,1">
                     <TextBlock Text="v1.0.0" FontSize="10" Foreground="#60a5fa" FontWeight="SemiBold"/>
