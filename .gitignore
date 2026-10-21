@@ -17,3 +17,9 @@ publish/
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+## Personal notes & local guides
+WORKFLOW_GUIDE.md
+*_NOTES.md
+*.personal.md
+
